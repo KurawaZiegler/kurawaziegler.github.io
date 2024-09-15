@@ -1,0 +1,60 @@
+.carousel {
+    position: relative;
+    padding: 81px 0;
+    &__inner {
+        position: relative;
+        width: 750px;
+        margin: 0 auto;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .prev,
+    .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -66px;
+        border: none;
+        background-color: #fff;
+        img {
+            width: 31px;
+            height: 50px;
+            &:active {
+                transform: scale(0.9);
+            }
+        }
+    }
+
+    .next {
+        right: -66px;
+        left: auto;
+    }
+    .tns-item {
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .tns-nav {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    [aria-controls] {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        border: none;
+        background-color: #b0b0b0;
+        margin-right: 30px;
+        margin-top: 10px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .tns-nav-active {
+        background-color: $main_color;
+    }
+}

@@ -1,0 +1,15 @@
+.pageup {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    bottom: 40px;
+    right: 75px;
+    width: 30px;
+    height: 30px;
+    img {
+        width: 100%;
+    }
+    &:active {
+        transform: scale(0.9);
+    }
+}

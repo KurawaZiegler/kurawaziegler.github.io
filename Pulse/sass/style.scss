@@ -1,0 +1,33 @@
+* {
+    font-family: "Museo Sabs Cyrl", sans-serif;
+    transition: 0.3s all;
+}
+.overlay,
+.pageup,
+.modal {
+    transition: 0s all;
+}
+.container {
+    position: relative;
+    max-width: 950px;
+    margin: 0 auto;
+}
+//Base
+@import "base/variables";
+@import "base/mixins";
+//Blocks
+@import "blocks/promo";
+@import "blocks/header";
+@import "blocks/advantage";
+@import "blocks/consultation";
+@import "blocks/carousel";
+@import "blocks/catalog";
+@import "blocks/reviews";
+@import "blocks/footer";
+@import "blocks/modal";
+//Elemets
+@import "blocks/buttons";
+@import "blocks/titles";
+@import "blocks/forms";
+@import "blocks/pageup";
+@import "blocks/media";
