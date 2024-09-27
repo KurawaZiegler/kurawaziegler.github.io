@@ -1,0 +1,394 @@
+// VARIABLES
+$color_main: #E1EDE6
+$color_accent: #598d66
+$color_second: #e1ede6
+$color_main_txt: #2c2d35
+$color_second_txt: #86928b
+//MIXINS
+@mixin main_btn
+.container
+    position: relative
+header
+    // max-height: 100px
+    position: relative
+    display: flex
+    // align-items: center
+    padding: 33px 0
+    background-color: $color_main
+    .logo
+        position: absolute
+        display: flex
+        // align-items: center
+        top: 50%
+        transform: translateY(-50%)
+        &_img
+            margin-right: 8px
+        &_txt
+            font-weight: 700
+            font-size: 20px
+            color: $color_accent
+    .nav
+        position: absolute
+        right: 0
+        top: 50%
+        transform: translateY(-50%)
+    .menu
+        display: flex
+        justify-content: flex-end
+        li
+            list-style-type: none
+        &_item
+            margin: 5px 60px 0 0
+        &_links
+            text-decoration: none
+            font-weight: 500
+            font-size: 20px
+            color: $color_main_txt
+            transition: 0.3s all
+            &:hover
+                color: $color_accent
+        &_cart
+            margin-top: 5px
+            cursor: pointer
+            svg
+                path
+                    transition: 0.3s all
+            &:hover
+                svg
+                    path
+                        stroke: $color_accent
+            &:focus
+                svg
+                    path
+                        stroke: $color_accent
+                        background-color: #d4e8d9
+            &:active
+                svg
+                    path
+                        stroke: #376b44
+.promo
+    &_title
+        margin-top: 145px
+        margin-bottom: 0
+        font-weight: 500
+        font-size: 60px
+        line-height: 110%
+        color: $color_main_txt
+        span
+            color: $color_accent
+    &_txt
+        margin-top: 20px
+        font-weight: 500
+        line-height: 150%
+        font-size: 18px
+        color: #86928b
+    &_btn
+        margin-top: 60px
+
+        width: 227px
+        height: 65px
+        border: 1px solid $color_accent
+        background-color: #fff
+
+        font-weight: 500
+        font-size: 20px
+        color: $color_accent
+        transition: 0.5s all
+        &:hover
+            background-color: $color_accent
+            color: #f4f6f5
+        &:focus
+            background-color: #d4e8d9
+            color: $color_accent
+        &:active
+            background-color: #376b44
+            color: #f4f6f5
+
+.reproduction
+    padding: 70px 0
+    &_wrapper
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &_title
+        font-weight: 500
+        font-size: 40px
+        line-height: 110%
+        color: $color_main_txt
+    .btn_wrapper
+        display: flex
+        justify-content: flex-end
+    &_btn
+        margin-right: 32px
+        padding: 10px 20px
+        height: 43px
+        border-radius: 20px
+        border: 2px solid #fff
+        background-color: #d4e8d9
+        transition: 0.5s all
+        &:last-child
+            margin-right: 0
+        &:hover
+            background-color: $color_accent
+            color: #f4f6f5
+            border: 2px solid $color_accent
+        &:focus
+            color: $color_main_txt
+            background-color: #d4e8d9
+            border: 2px solid $color_accent
+        &:active
+            background-color: #376b44
+            border: 2px solid #376b44
+            color: #f4f6f5
+        &_wrapper
+            display: flex
+            align-items: center
+
+    .card
+        background-color: $color_second
+        margin: 30px 6px 0 0
+        padding: 20px 20px 30px 20px
+        // max-width: 350px
+
+        &_img
+            width: 100%
+        &_author
+            margin-top: 20px
+            font-weight: 500
+            font-size: 18px
+            line-height: 100%
+            color: $color_second_txt
+        &_name
+            margin-top: 10px
+            font-weight: 500
+            font-size: 30px
+            line-height: 100%
+            color: $color_main_txt
+        &_characteristic
+            margin-top: 8px
+            font-weight: 500
+            font-size: 18px
+            line-height: 100%
+            color: $color_main_txt
+        &_price
+            margin-top: 30px
+            font-weight: 500
+            font-size: 24px
+            line-height: 100%
+            color: $color_accent
+        &_btn
+            display: block
+            margin: 0 auto
+            margin-top: 20px
+            width: 100%
+            height: 65px
+            border: 1px solid $color_accent
+            background-color: $color_second
+
+            font-weight: 500
+            font-size: 20px
+            color: $color_accent
+            transition: 0.5s all
+            &:hover
+                background-color: $color_accent
+                color: #f4f6f5
+            &:focus
+                background-color: #d4e8d9
+                color: $color_accent
+            &:active
+                background-color: #376b44
+                color: #f4f6f5
+.new
+    position: relative
+    padding: 70px 0
+    background: url("../img/new_bg.png") center center/cover no-repeat
+    height: 574px
+    &::before
+        background: url("../img/new_bg_sharp.png") center center/cover no-repeat
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
+    &_logo
+        position: relative
+        display: flex
+        align-items: center
+        &_img
+            margin-right: 20px
+
+    .logo_title
+        margin-bottom: 0
+        display: block
+        width: 100%
+        font-weight: 500
+        font-size: 40px
+        line-height: 100%
+        color: #f4f6f5
+    &_txt
+        max-width: 540px
+        margin-top: 20px
+        margin-bottom: 0
+        position: relative
+        font-weight: 500
+        font-size: 18px
+        line-height: 150%
+        color: #fff
+    &_btn
+        position: relative
+        display: block
+        margin: 0 auto
+        margin-top: 60px
+        width: 100%
+        height: 65px
+        border: 2px solid #EEDB6D
+        background-color: #EEDB6D
+
+        font-weight: 500
+        font-size: 20px
+        color: $color_main_txt
+        transition: 0.5s all
+        &:hover
+            background-color: #FAEB97
+            border: 2px solid #FAEB97
+            color: $color_main_txt
+        &:focus
+            background-color: #FAEB97
+            border: 2px solid #A38314
+            color: $color_main_txt
+        &:active
+            border: 2px solid #D9B949
+            background-color: #D9B949
+            color: $color_main_txt
+.team
+    padding: 70px 0
+    &_title
+        margin-top: 124px
+        margin-bottom: 0
+        font-weight: 500
+        font-size: 40px
+        line-height: 100%
+        color: $color_main_txt
+    &_txt
+        max-width: 635px
+        margin-top: 20px
+        margin-bottom: 0
+        font-weight: 500
+        font-size: 18px
+        // line-height: 150%
+        color: $color_main_txt
+    &_img_block
+        margin-top: 20px
+        display: flex
+        .team_img
+            margin-right: 30px
+            display: block
+            width: 80px
+            height: 80px
+.footer
+    padding: 23px 0
+    background-color: $color_main
+    height: 168px
+    &_logo
+        position: relative
+        display: flex
+        align-items: center
+        &_img
+            margin-right: 8px
+        &_txt
+            font-weight: 700
+            font-size: 20px
+            color: $color_accent
+    &_num
+        display: block
+        margin-top: 35px
+        max-width: 170px
+        font-weight: 500
+        font-size: 20px
+        color: $color_main_txt
+        text-decoration: none
+        &:hover
+            color: $color_accent
+        &:focus
+            color: $color_main_txt
+            background-color: #d4e8d9
+        &:active
+            color: #376b44
+        &_txt
+            margin-top: 8px
+            font-weight: 500
+            font-size: 18px
+            color: $color_second_txt
+    &_links_wrapper
+        display: flex
+        ul
+            padding: 0
+            margin-right: 60px
+            li
+                list-style-type: none
+    .list_title
+        font-weight: 500
+        font-size: 20px
+        color: $color_main_txt
+    .list_item
+        padding: 0
+        margin-top: 6px
+        .list_links
+            font-weight: 500
+            font-size: 18px
+            line-height: 150%
+            text-decoration: none
+            color: $color_second_txt
+            transition: 0.3s all
+            &:hover
+                color: $color_accent
+            &:focus
+                color: $color_main_txt
+                background-color: #d4e8d9
+            &:active
+                color: #376b44
+    &_wrapper
+        display: grid
+        flex-direction: column
+        justify-items: start
+        justify-content: end
+    &_social_wrapper
+        display: flex
+        justify-content: flex-end
+    &_social_item
+        width: 24px
+        height: 24px
+        text-decoration: none
+        margin-right: 30px
+        svg
+            path
+                transition: 0.3s all
+        &:last-child
+            margin-right: 0
+
+        &:hover
+            svg
+                path
+                    fill: $color_accent
+        &:focus
+            svg
+                path
+                    fill: $color_accent
+                    background-color: #d4e8d9
+        &:active
+            svg
+                path
+                    fill: #376b44
+
+    &_rights
+        display: flex
+        flex-direction: column
+        &_res
+            margin: 10px 0 6px 0
+            font-weight: 500
+            font-size: 12px
+            line-height: 120%
+            color: $color_second_txt
+            &:last-child
+                margin: 0

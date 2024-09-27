@@ -1,0 +1,215 @@
+.promo {
+    padding: 0 39px;
+    &__wrapper {
+        display: flex;
+    }
+    &__img {
+        width: 540px;
+        height: 621px;
+    }
+    &__content-wrapper {
+        margin-top: 145px;
+        margin-left: 30px;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 60px;
+        line-height: 110%;
+        color: #2c2d35;
+        span {
+            color: #598d66;
+        }
+    }
+    &__text {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        color: #86928b;
+    }
+    &_btn {
+        margin-top: 60px;
+    }
+}
+@media (max-width: 1127px) {
+    .promo {
+        &__content-wrapper {
+            margin-top: 100px;
+        }
+        &__title {
+            font-size: 50px;
+            line-height: 100%;
+        }
+    }
+}
+@media (max-width: 1050px) {
+    .promo {
+        &__img {
+            width: 435px;
+            height: 500px;
+        }
+        &__title {
+            font-size: 50px;
+        }
+    }
+}
+@media (max-width: 945px) {
+    .promo {
+        &__img {
+            width: 400px;
+            height: 460px;
+        }
+        &__title {
+            font-size: 45px;
+        }
+    }
+}
+@media (max-width: 872px) {
+    .promo {
+        &__img {
+            width: 375px;
+            height: 430px;
+        }
+        &__content-wrapper {
+            margin-top: 70px;
+        }
+        &__title {
+            font-size: 40px;
+        }
+    }
+}
+@media (max-width: 808px) {
+    .promo {
+        &__img {
+            width: 348px;
+            height: 400px;
+        }
+        &__content-wrapper {
+            margin-top: 40px;
+        }
+        &__title {
+            font-size: 35px;
+        }
+    }
+}
+@media (max-width: 750px) {
+    .promo {
+        padding: 0 20px;
+        &__img {
+            width: 295px;
+            height: 340px;
+        }
+        &__content-wrapper {
+            margin-top: 35px;
+            margin-left: 30px;
+        }
+        &__title {
+            font-size: 40px;
+        }
+        &__text {
+            font-size: 18px;
+        }
+        &_btn {
+            margin-top: 40px;
+            width: 210px;
+            height: 60px;
+        }
+    }
+}
+@media (max-width: 690px) {
+    .promo {
+        &__img {
+            width: 295px;
+            height: 340px;
+        }
+        &__content-wrapper {
+            margin-top: 35px;
+            margin-left: 20px;
+        }
+        &__title {
+            font-size: 35px;
+        }
+    }
+}
+@media (max-width: 643px) {
+    .promo {
+        &__img {
+            width: 261px;
+            height: 300px;
+        }
+        &__title {
+            font-size: 30px;
+        }
+        &__text {
+            font-size: 17px;
+        }
+    }
+}
+@media (max-width: 585px) {
+    .promo {
+        padding: 50px 33px 0 33px;
+        &__img {
+            width: 195px;
+            height: 239px;
+        }
+        &__content-wrapper {
+            margin-top: 0;
+        }
+        &__text {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        &_btn {
+            margin-top: 10px;
+            width: 178px;
+            height: 50px;
+        }
+    }
+}
+@media (max-width: 531px) {
+    .promo {
+        &__img {
+            width: 165px;
+            height: 190px;
+        }
+        &__title {
+            font-size: 30px;
+        }
+        &__text {
+            font-size: 15px;
+        }
+    }
+}
+@media (max-width: 481px) {
+    .promo {
+        padding: 60px 20px 0 20px;
+        &__img {
+            display: none;
+        }
+        &__content-wrapper {
+            margin: 0;
+        }
+        &__title {
+            font-size: 40px;
+        }
+        &__text {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        &_btn {
+            margin-top: 40px;
+            width: 154px;
+            height: 50px;
+        }
+    }
+}
+@media (max-width: 420px) {
+    .promo {
+        &__title {
+            font-size: 35px;
+        }
+        &__text {
+            font-size: 15px;
+        }
+    }
+}

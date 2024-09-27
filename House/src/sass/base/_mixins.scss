@@ -1,0 +1,35 @@
+@mixin link_hover {
+    &:focus {
+        background: #d4e8d9;
+    }
+    &:hover {
+        color: #598d66;
+    }
+    &:active {
+        color: #376b44;
+    }
+}
+@mixin svg_hover {
+    &:hover {
+        svg {
+            path {
+                stroke: #598d66;
+            }
+        }
+    }
+    &:focus {
+        svg {
+            path {
+                stroke: #598d66;
+                background-color: #598d66;
+            }
+        }
+    }
+    &:active {
+        svg {
+            path {
+                stroke: #376b44;
+            }
+        }
+    }
+}

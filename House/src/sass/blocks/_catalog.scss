@@ -1,0 +1,199 @@
+.catalog {
+    padding: 70px 20px;
+    &-top__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 100%;
+        color: #2c2d35;
+    }
+    &__tabs {
+        display: flex;
+    }
+    &__tab {
+        padding: 10px 20px;
+        height: 43px;
+        border-radius: 20px;
+        border: 2px solid #fff;
+        background-color: #d4e8d9;
+        transition: 0.5s all;
+        cursor: pointer;
+        &:hover {
+            background-color: #598d66;
+            color: #f4f6f5;
+            border: 2px solid #598d66;
+        }
+        // &:focus {
+        //     color: #2c2d35;
+        //     background-color: #d4e8d9;
+        //     border: 2px solid #598d66;
+        // }
+        &_active {
+            background-color: #376b44;
+            border: 2px solid #376b44;
+            color: #f4f6f5;
+        }
+        // background-color: #fff;
+        margin-right: 32px;
+        &:last-child {
+            margin: 0;
+        }
+    }
+    &__tab-content {
+        display: none;
+        &_active {
+            display: block;
+        }
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: #e1ede6;
+        margin-top: 30px;
+        height: 96%;
+
+        // max-width: 350px;
+        &-img {
+            width: 100%;
+            object-fit: cover;
+            // margin-bottom: 20px;
+        }
+        &-content {
+            // height: 95%;
+            padding-top: 16px;
+            padding-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-grow: 1;
+        }
+        &-author {
+            margin-bottom: 10px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 100%;
+            color: #86928b;
+        }
+        &-name {
+            margin-bottom: 8px;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 100%;
+            color: #2c2d35;
+        }
+        &-despr {
+            margin-bottom: 30px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 100%;
+            color: #2c2d35;
+        }
+        &-price {
+            margin-bottom: 20px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 100%;
+            color: #598d66;
+        }
+    }
+}
+@media (max-width: 955px) {
+    .catalog {
+        &__card {
+            &-name {
+                font-size: 28px;
+            }
+        }
+        // &__card-author {
+        //     font-size: 16px;
+        // }
+        // &-name {
+        //     font-size: 22px;
+        // }
+        // &__card-despr {
+        //     font-size: 16px;
+        // }
+        // &__card-price {
+        //     font-size: 22px;
+        // }
+        // .card_btn {
+        //     font-size: 18px;
+        // }
+    }
+}
+@media (max-width: 725px) {
+    .catalog {
+        &__title {
+            font-size: 30px;
+        }
+    }
+}
+@media (max-width: 691px) {
+    .catalog {
+        &__title {
+            font-size: 30px;
+        }
+    }
+}
+@media (max-width: 641px) {
+    .catalog {
+        &__title {
+            font-size: 27px;
+        }
+        &__tab {
+            margin-right: 20px;
+        }
+        &__card {
+            &-name {
+                font-size: 26px;
+            }
+            &-author {
+                font-size: 17px;
+            }
+            &-despr {
+                font-size: 17px;
+            }
+            &-price {
+                font-size: 22px;
+            }
+        }
+    }
+}
+@media (max-width: 585px) {
+    .catalog {
+        &-top__wrapper {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__title {
+            font-size: 24px;
+        }
+        &__tabs {
+            margin-top: 20px;
+        }
+        &__tab {
+            margin-right: 32px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .catalog {
+        // &__card {
+        //     max-width: 100%;
+        // }
+    }
+}
+@media (max-width: 465px) {
+    .catalog {
+        &__tabs {
+            width: 100%;
+            margin-top: 20px;
+            overflow-x: scroll;
+        }
+    }
+}
