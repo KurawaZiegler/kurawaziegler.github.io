@@ -1,0 +1,21 @@
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+a {
+    &:hover {
+        color: #000;
+        text-decoration: none;
+    }
+}

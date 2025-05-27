@@ -1,0 +1,39 @@
+* {
+    font-family: "Jost", serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.no-scroll {
+    overflow: hidden;
+}
+//fonts
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+//libs
+// @import "libs/tiny-slider.css";
+@import "libs/swiper-bundle.min.css";
+@import "libs/bootstrap-reboot.min";
+@import "libs/style_reset.scss";
+//base
+@import "base/variables.scss";
+@import "base/mixins.scss";
+//blocks
+@import "blocks/titles.scss";
+@import "blocks/logo.scss";
+@import "blocks/buttons.scss";
+@import "blocks/menu.scss";
+@import "blocks/header.scss";
+@import "blocks/promo.scss";
+@import "blocks/about.scss";
+@import "blocks/skills.scss";
+@import "blocks/trainers.scss";
+@import "blocks/modal.scss";
+@import "blocks/pack.scss";
+@import "blocks/form.scss";
+@import "blocks/footer.scss";
+
+//media
+@import "blocks/media.scss";

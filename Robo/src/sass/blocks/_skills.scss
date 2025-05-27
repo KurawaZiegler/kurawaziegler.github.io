@@ -1,0 +1,136 @@
+.skills {
+    padding: 100px 0;
+    background-color: #f9f9f9;
+    &__title {
+        font-weight: 600;
+        font-size: 50px;
+        color: var(--text_dark_color);
+    }
+    .tooltip {
+        position: relative;
+        &_btn {
+            position: absolute;
+            top: 0;
+            left: 10px;
+            border-radius: 100%;
+            padding: 0px 10px;
+            border: none;
+            font-size: 13px;
+            color: var(--text_dark_color);
+            background-color: rgba(20, 16, 36, 0.08);
+        }
+        &:hover {
+            &::after {
+                content: "При наличии свободных мест";
+                position: absolute;
+
+                top: -70px;
+                left: 10px;
+
+                border-radius: 5px;
+                padding: 15px 20px;
+                width: 251px;
+                height: 56px;
+
+                font-weight: 400;
+                font-size: 16px;
+                text-align: center;
+                box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.25);
+                color: var(--text_dark_color);
+                background-color: #fff;
+            }
+        }
+    }
+    &__wrapper {
+        margin-top: 105px;
+        display: grid;
+        grid-template-columns: repeat(3, 360px);
+        column-gap: 40px;
+    }
+    &__item {
+        position: relative;
+        &-title {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 100%;
+            color: var(--text_dark_color);
+        }
+        &-descr {
+            margin-top: 33px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            color: var(--text_trans_descr_color);
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .skills {
+        &__wrapper {
+            grid-template-columns: repeat(3, 300px);
+            column-gap: 30px;
+        }
+        &__item {
+            &-title {
+                // font-size: 24px;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .skills {
+        &__wrapper {
+            grid-template-columns: repeat(2, 347px);
+            grid-auto-rows: auto;
+            justify-content: space-between;
+            row-gap: 30px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .skills {
+        padding: 40px 0;
+        &__title {
+            text-align: center;
+            font-size: 30px;
+        }
+        &__wrapper {
+            margin-top: 40px;
+            grid-template-columns: 300px;
+            justify-content: center;
+        }
+        &__item {
+            &-title {
+                text-align: center;
+            }
+            &-descr {
+                text-align: center;
+            }
+        }
+        .tooltip {
+            &:hover {
+                &::after {
+                    top: -70px;
+                    left: -175px;
+                }
+            }
+        }
+    }
+}
+// @media (max-width: 576px) {
+//     .about {
+//         padding-top: 60px;
+//         &__text {
+//             font-size: 20px;
+//         }
+//         &__wrapper {
+//             margin-top: 40px;
+//             row-gap: 30px;
+//         }
+//         &__item {
+//             &-title {
+//                 text-align: center;
+//             }
+//         }
+//     }
+// }

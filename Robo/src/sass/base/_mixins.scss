@@ -1,0 +1,93 @@
+@mixin link_hover {
+    &::before {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 1px;
+        background-color: #fff;
+        transition: 0.3s all;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        right: 0;
+        width: 0%;
+        height: 1px;
+        background-color: #fff;
+        transition: 0.3s all;
+    }
+    &:hover {
+        &::before {
+            width: 100%;
+        }
+        &::after {
+            width: 100%;
+        }
+    }
+    &:active {
+        &::before {
+            background-color: var(--main_color);
+        }
+        &::after {
+            background-color: var(--main_color);
+        }
+    }
+}
+@mixin link_active {
+    &:active {
+        color: var(--main_color);
+    }
+}
+@mixin card_hover {
+    &:hover {
+        transform: scaleY(1.15);
+        background-color: var(--bc_color);
+        .pack {
+            &__content {
+                transform: scaleY(0.85);
+            }
+            &__item {
+                &-title {
+                    color: #fff;
+                }
+                &-price {
+                    color: #fff;
+                }
+                &-descr {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+@mixin btn_hover {
+    &:hover {
+        border: 1px solid #fff;
+    }
+}
+@mixin btn_active {
+    &:active {
+        background-color: #fff;
+        color: var(--text_dark_color);
+    }
+}
+@mixin btn-slider_active {
+    &:active {
+        transform: scale(0.95);
+        svg {
+            path {
+                fill: var(--main_color);
+            }
+        }
+    }
+}
+@mixin btn-slider_hover {
+    &:hover {
+        svg {
+            path {
+                fill: var(--main_color);
+            }
+        }
+    }
+}

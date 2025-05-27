@@ -1,0 +1,16 @@
+.btn {
+    width: 260px;
+    height: 80px;
+    background-color: var(--main_color);
+    padding: 25px 50px;
+    border: none;
+    border-radius: 5px;
+
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+
+    transition: 0.3s all;
+    @include btn_hover;
+    @include btn_active;
+}
